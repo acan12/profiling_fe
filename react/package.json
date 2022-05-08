@@ -1,0 +1,38 @@
+{
+  "name": "web-profile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "@sekmet/react-magnific-popup": "^1.0.2",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
+    "html-react-parser": "^1.4.12",
+    "isotope-layout": "^3.0.6",
+    "next": "12.1.5",
+    "react": "18.0.0",
+    "react-bootstrap": "^2.3.1",
+    "react-dom": "18.0.0",
+    "react-isotope": "^1.0.7",
+    "react-magnific-popup": "^1.0.1",
+    "react-modal": "^3.15.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-parallax": "^3.3.0",
+    "react-scroll": "^1.8.7",
+    "react-tsparticles": "^2.0.6",
+    "react-typed": "^1.2.0",
+    "tsparticles": "^2.0.6"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
+    "sass": "^1.50.0"
+  }
+}

@@ -1,1 +1,34 @@
 .DS_Store
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/next-js/node_modules
+/next-js/.pnp
+/next-js/.pnp.js
+
+# testing
+/next-js/coverage
+
+# next.js
+/next-js/.next/
+/next-js/out/
+
+# production
+/next-js/build
+
+# misc
+/next-js/.DS_Store
+/next-js/*.pem
+
+# debug
+/next-js/npm-debug.log*
+/next-js/yarn-debug.log*
+/next-js/yarn-error.log*
+/next-js/.pnpm-debug.log*
+
+# local env files
+/next-js/.env*.local
+
+# vercel
+/next-js/.vercel

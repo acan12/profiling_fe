@@ -4,8 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [Next JS]
 
 ## Prerequisites
-Node (v16.14.2)
-Yarn/NPM
+- Node (v16.14.2)
+- Yarn/NPM
 
 ### Installation
 1. Clone the repo

@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Built with 
+- [Next JS]
+
+## Prerequisites
+Node (v16.14.2)
+Yarn/NPM
+
+### Installation
+1. Clone the repo
+2. Move to repo root directory (`react`).
+3. Install packages (`yarn install`).
+4. `yarn build`
+5. `yarn start`
+6. You can now view *app* in the browser by going to [http://localhost:3000](http://localhost:3000)
+
 ## Getting Started
 
 First, run the development server:

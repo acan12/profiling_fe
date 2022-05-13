@@ -38,15 +38,15 @@ const Portfolio = ({ portfolio }) => {
         </div>
         
         <ul className="portfolio-menu nav nav-pills text-uppercase justify-content-center border-bottom-0 mb-5">
-          <li className="nav-item" onClick={handleFilterKeyChange('*')}> <a data-filter="*" className="nav-link rounded-pill active" href="">All</a></li>
+          <li className="nav-item" onClick={handleFilterKeyChange('*')}> <a data-filter="*" className={`nav-link rounded-pill ${key == "*" && 'active'}`} role="button">All</a></li>
           {
-            portfolio?.category.map(key => (
+            portfolio?.category.map(item => (
               <li 
-                key={key.key}
-                className="nav-item" 
-                onClick={handleFilterKeyChange(key?.key)}
+                key={item.key}
+                className="nav-item"
+                onClick={handleFilterKeyChange(item?.key)}
               > 
-                <a data-filter={`.${key?.key}`} role="button" className="nav-link rounded-pill">{key?.label}</a>
+                <a data-filter={`.${item?.key}`} role="button" className={`nav-link rounded-pill ${key == item.key && "active"}`}>{item?.label}</a>
               </li>
             ))
           }

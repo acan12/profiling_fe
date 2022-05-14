@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react"
 import dynamic from 'next/dynamic'
 import { Popup } from '@sekmet/react-magnific-popup';
+import Image from 'next/image'
 
 const OwlCarousel = dynamic(() => import('./OwlCarouselPortfolio'), {
   ssr: false
@@ -24,7 +25,11 @@ const PopupPortfolio = ({
     return false
   }
 
-  const image = portfolio?.images[0]
+  let image = null
+
+  if (portfolio.images.length > 0) {
+    image = portfolio?.images[0]
+  }
 
   return (
     <div>
@@ -34,7 +39,8 @@ const PopupPortfolio = ({
         config={formConfig}
       >
         <div className="portfolio-box rounded">
-          <div className="portfolio-img rounded"> <img className="img-fluid d-block" src={image} alt="" />
+          <div className="portfolio-img rounded"> 
+            <img className="img-fluid d-block" src={image} alt="" />
             <div className="portfolio-overlay"> 
               
               <a className="popup-ajax stretched-link" href=""></a>

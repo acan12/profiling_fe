@@ -6,15 +6,19 @@ import PopupPortfolio from "./Popup"
 
 const Portfolio = ({ portfolio }) => {
   const isotope = React.useRef()
-  const [key, setKey] = React.useState('*')
+  const [key, setKey] = React.useState('default')
 
   React.useEffect(() => {
     isotope.current = new Isotope('.portfolio-filter', {
       layoutMode: 'fitRows',
     })
 
+    setTimeout(() => {
+      setKey("*")
+    }, 100)
+
     return () => isotope.current.destroy()
-  }, [])
+  }, [portfolio])
 
   React.useEffect(() => {
     key === '*'
@@ -53,13 +57,15 @@ const Portfolio = ({ portfolio }) => {
         </ul>
         
         <div className="portfolio popup-ajax-gallery">
-          <div className="row portfolio-filter g-4">
+          <div className="row portfolio-filter g-4" style={{
+            "height": "auto!important"
+          }}>
             {
-              portfolio?.items.map(key => {
+              portfolio?.items.map(item => {
                 return (
-                  <div key={key?.id} className={`col-sm-6 col-lg-4 ${key?.category?.key}`}>
+                  <div key={item?.id} className={`col-sm-6 col-lg-4 portfolio-filter-box ${item?.category?.key}`}>
                     <PopupPortfolio 
-                      portfolio={key}
+                      portfolio={item}
                     />
                   </div>
                 )

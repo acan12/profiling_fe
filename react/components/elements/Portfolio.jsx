@@ -15,10 +15,10 @@ const Portfolio = ({ portfolio }) => {
 
     setTimeout(() => {
       setKey("*")
-    }, 100)
+    }, 1)
 
     return () => isotope.current.destroy()
-  }, [portfolio])
+  }, [])
 
   React.useEffect(() => {
     key === '*'

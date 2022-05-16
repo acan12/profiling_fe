@@ -40,7 +40,7 @@ const PopupPortfolio = ({
       >
         <div className="portfolio-box rounded">
           <div className="portfolio-img rounded"> 
-            <img className="img-fluid d-block" src={image} alt="" />
+            <img className="d-block" src={image} alt="" />
             <div className="portfolio-overlay"> 
               
               <a className="popup-ajax stretched-link" href=""></a>

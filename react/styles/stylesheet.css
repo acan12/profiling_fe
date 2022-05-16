@@ -3720,8 +3720,3 @@ input:-internal-autofill-selected {
   border-radius: 4px 0px 0px 4px;
 }
 
-
-.modal-about {
-  max-height: 600px;
-  overflow-y: scroll;
-}

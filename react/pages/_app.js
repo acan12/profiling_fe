@@ -4,6 +4,7 @@ import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import '../styles/globals.css'
 import "../styles/stylesheet.css"
+import "../styles/custom.css"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
